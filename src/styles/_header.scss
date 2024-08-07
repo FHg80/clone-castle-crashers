@@ -60,6 +60,15 @@
                         transition: .2s;
                     }
 
+
+                }
+
+                &:last-child a {
+                    font-weight: bold;
+                }
+
+                &:last-child a:hover {
+                    color: #FFF;
                 }
                 
             }
@@ -74,9 +83,8 @@
         cursor: pointer;
         transition: .4s;
         
-        a:hover {
-            color: white;
-        }
+        
+        
 
         &:hover {
             background-color: orange;
