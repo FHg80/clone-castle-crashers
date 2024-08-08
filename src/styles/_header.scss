@@ -8,6 +8,8 @@
     font-weight: 500;
     text-transform: uppercase;
     z-index: 1;
+    height: 3.5em;
+    line-height: 3.5em;
 
     &__logo {
         width: 100%;
@@ -22,19 +24,16 @@
     }
 
     &__container {
-        height: calc(3.5em + 9px);
-        line-height: 3.5em;
-        
+        height: 3.2em;
     }
 
     &__nav {
         position: absolute;
         right: 1.5em;
+        height: inherit;
+        line-height: inherit;
         top: 0;
-        margin-top: 4px;
-        margin-right: 4em;
-        display: flex;
-        align-items: center;
+        
 
         &__list {
             list-style: none;
@@ -54,13 +53,21 @@
                     text-decoration: none;
                     cursor: pointer;
                     transition: .2s;
+                }
 
-                    &:hover {
+                &__compra {
+                    a:last-child {
+                        margin-left: 8px;
+                    }
+                }
+
+                &:hover {
+
+                    a {
                         color: orange;
                         transition: .2s;
                     }
-
-
+                    
                 }
 
                 &:last-child a {
@@ -82,9 +89,8 @@
         padding: 0 22px;
         cursor: pointer;
         transition: .4s;
-        
-        
-        
+        height: 3.1em;
+        margin-top: 3px;
 
         &:hover {
             background-color: orange;
@@ -92,4 +98,6 @@
             
         }
     }
+
+    
 }
