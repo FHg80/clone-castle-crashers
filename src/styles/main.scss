@@ -1,6 +1,7 @@
 @use 'var';
 @use 'header';
 @use 'dropdown';
+@use 'banner';
 
 
 @font-face {
@@ -15,7 +16,11 @@
 }
 
 body {
+    padding-top: 3.5em;
     background-color: var.$backgroundMainColor;
     font-family: Raleway;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65em;
 }
 
