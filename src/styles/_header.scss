@@ -40,7 +40,6 @@
             white-space: nowrap;
 
             &__item {
-
                 margin-left: 2em;
                 display: inline-block;
 
@@ -56,8 +55,8 @@
                 }
 
                 &__compra {
-
                     cursor: pointer;
+                    
                     a:last-child {
                         margin-left: 8px;
                     }
