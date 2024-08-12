@@ -1,0 +1,107 @@
+.content {
+    padding: 0;
+    
+    &__inner {
+        margin: 0 auto;
+        max-width: 90em;
+        width: 90%;
+    }
+
+    &__features {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &__feature {
+            padding: 4em 0 2em 0;
+            width: calc(33.33% - 5em);
+
+            &::before {
+                background-color: #e6e6e6;
+                content: '';
+                display: block;
+                height: 100%;
+                margin-left: -3.75em;
+                position: absolute;
+                top: 0;
+                width: 1px;
+
+            }
+
+            &:first-child::before {
+                display: none;
+            }
+
+            &__img {
+                display: block;
+                margin-bottom: 2em;
+                width: 100%;
+                position: relative;
+            }
+
+            &__title {
+                color: #444;
+                font-size: 1em;
+                line-height: 1.5em;
+                font-weight: 700;
+                margin-bottom: 1.5em;
+                padding-bottom: 1.25em;
+                position: relative;
+                text-transform: uppercase;
+
+                &::after {
+                    border-bottom: solid 1px;
+                    bottom: 0;
+                    content: '';
+                    display: inline-block;
+                    left: 0;
+                    position: absolute;
+                    width: 22rem;
+                }
+
+                
+            }
+
+            &__text {
+                margin-bottom: 2em;
+
+                &__link {
+                    color: #444;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: .2s;
+
+                    &:hover {
+                        color: orange;
+                        transition: .2s;
+                    }
+                }
+            }
+
+            &__containerBTN {
+                text-align: center;
+
+                &__btn {
+                    background-color: #444;
+                    color: #FFF;
+                    display: inline-block;
+                    font-weight: 700;
+                    height: 2.75em;
+                    line-height: 2.75em;
+                    padding: 0 1.5em;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    transition: .2s;
+
+                    &:hover {
+                        background: orange;
+                        transition: .2s;
+                    }
+                }
+            }
+        }
+    }
+}
