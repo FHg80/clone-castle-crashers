@@ -1,14 +1,14 @@
 .dropdown {
         user-select: none;
         position: absolute;
-        z-index: 5;
-        left: 50em;
-        top: 56px; 
+        z-index: 3;
+        left: 49em; 
         display: none;
         opacity: 1;
 
         &--is-active {
                 display: block;
+                
         }
 
         &__list {
