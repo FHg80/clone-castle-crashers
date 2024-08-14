@@ -33,6 +33,10 @@
             margin-bottom: 2em;
             margin-bottom: 44px;
 
+            @media(max-width: 900px) {
+                display: none;
+            }
+
             &__upper {
                 margin-bottom: 44px;
             }
